@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvItemMssv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivItemAvatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="8dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="Avatar"/>
+
+    <Button
+        android:id="@+id/btnItemEdit"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:text="Sửa"
+        android:textSize="6sp" />
+
+    <Button
+        android:id="@+id/btnItemDelete"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Xóa"
+        android:textSize="7sp" />
+</LinearLayout>
